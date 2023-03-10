@@ -1,0 +1,286 @@
+@import url(https://www.flaticon.com/br/uicons/interface-icons);
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+
+:root{
+    --cor-topo: #b8b8b8;
+    --cor-preta: black;
+}
+
+header{
+    background-color: var(--cor-principal);
+
+}
+*{
+    margin: 0px;
+    padding:0px;
+    transition: all 1s;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.pesquisa{
+    text-align: center;
+    border-radius: 50px;
+    width: 206px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    flex-direction: row-reverse;
+    padding: 12px;
+    margin-left: 600px;
+}
+
+.pesquisa input {
+    background: transparent;
+    border: none;
+}
+    
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 15px;
+}
+
+header nav a:hover{
+    background-color: var(--cor-principal);
+    color: rgb(152, 23, 190);
+    border-radius: 20px;
+    
+}
+
+.marginlateral{
+    margin: 0px 15px;
+}
+
+.lista{
+    background: transparent;
+    border: none;
+}
+.lista img{
+    width: 15px;
+    
+}
+
+.logo{
+    width: 120px;
+}
+
+.nav{
+    text-align: end;
+}
+
+.lupa{
+    width: 15px;
+}
+
+.homem{
+    width: 15px;
+}
+
+.interrogacao{
+    width: 15px;
+}
+
+main .banner img{
+   width: 100%;
+}
+
+main .imagemvilla img{
+  width: 100%;
+  margin-top: 10px;
+  height: 500px;
+  
+}
+
+.milim {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.milim img {
+    max-width: 100%;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.milim div {
+    text-align: center;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+  
+.produtos img{
+    max-width: 100%;
+    padding: 20px 40px;
+}
+
+.produtos button {
+    text-align: center;
+    width: 206px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12px;
+    margin-left: 100px;
+    margin-top: -15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+.fim{
+    background:rgb(133, 129, 129);
+    height: 100%;
+    width: 100%;
+}
+
+.fim .p{
+    font-size: 1.2em;
+    display: flex;
+    text-align: center;
+}
+
+.fim p{
+    font-size: 1.2em;
+    display: inline;
+    padding: 10px;
+    margin-left: 100px;
+    color: #fff;
+ 
+    
+}
+
+.fim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produtos button:hover{
+    background: rgb(133, 129, 129);
+    border-radius: 25px;
+}
+
+.somos h3{
+    font-family: 'Tilt Warp', cursive !important;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.somos p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.somos {
+    display: grid;
+}
+
+.fim .p{
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+    padding-bottom: 15px;
+    font-size: 0.9em;
+}
+
+ul{
+    margin-right: 40px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    padding-bottom: 15px
+}
+
+ul li{
+    padding-top: -40px;
+    background-color: #fff;
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+}
+
+ul li:hover::before{
+    opacity: 1;
+}
+
+ul li::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+ul li:hover::after{
+    opacity: 0.5;
+}
+
+ul li i{
+    color:#777;
+    font-size: 1.75em !important;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+
+ul li span{
+    position: absolute;
+}
+
+ul li .titulo{
+    color: #fff;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
